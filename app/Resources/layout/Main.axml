@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="5dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="20dp"
+      android:gravity="center"
+      android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/button_activity_with_implements"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity With Implements"
+        android:textAllCaps="false"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/button_activity_with_methods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity With Methods"
+        android:textAllCaps="false"
+        android:layout_weight="1"/>
+
+  </LinearLayout>
+
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textStyle="bold"
+      android:text="Gestion des listeners sur les Boutons"
+      android:layout_margin="10dp"
+      android:textSize="16sp"/>
+
+  <Button
+      android:id="@+id/button_click_me"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      android:textSize="14sp"
+      android:textAllCaps="false"
+      android:text="Click Me !"/>
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Gestion des listeners sur les EditText"
+      android:textStyle="bold"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginTop="20dp"
+      android:textSize="16sp"/>
+
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:textSize="16sp"
+      android:hint="Renseignez moi !"
+      android:textColorHint="#AAAAAA"
+      android:id="@+id/edittext"/>
+
+  <LinearLayout
+      android:weightSum="2"
+      android:layout_margin="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Aperçu :"
+        android:layout_weight="1.5"
+        android:layout_margin="10dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/apercu_edittext"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"/>
+
+  </LinearLayout>
+
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Gestion des listeners sur les SeekBar"
+      android:textStyle="bold"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginTop="20dp"
+      android:textSize="16sp"/>
+
+  <SeekBar
+      android:id="@+id/seekbar"
+      android:layout_margin="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:progress="100"
+      android:max="200"/>
+
+  <LinearLayout
+      android:weightSum="2"
+      android:layout_margin="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Valeurs :"
+        android:layout_weight="1.5"
+        android:layout_margin="10dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/apercu_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:layout_weight="0.5"/>
+
+  </LinearLayout>
+
+</LinearLayout>
